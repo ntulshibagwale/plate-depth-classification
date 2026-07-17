@@ -49,4 +49,4 @@ Performance was evaluated using **10-fold cross-validation**, where each fold re
 
 Mechanical Engineering, University of California, Santa Barbara
 
-📧 ntulshibagwale@ucsb.edu
+ntulshibagwale@ucsb.edu
