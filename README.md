@@ -39,14 +39,6 @@ Each waveform was represented using one of nine feature vectors.
 - Fully Connected Neural Networks
 - One-Dimensional Convolutional Neural Networks (CNNs)
 
-### Model Evaluation
-
-Performance was evaluated using **10-fold cross-validation**, where each fold represented an unseen experimental condition rather than a random subset of waveforms. Model performance was quantified using classification accuracy on the held-out fold. 
-
-### Model Evaluation
-
-Performance was evaluated using **10-fold cross-validation**, where each fold represented an unseen experimental condition rather than a random subset of waveforms. Model performance was quantified using classification accuracy on the held-out fold.
-
 ## Repository Organization
 
 The `run_ml_experiments.py` script is the primary entry point for training and evaluating the machine learning and deep learning models described in the paper.
