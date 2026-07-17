@@ -45,9 +45,11 @@ Performance was evaluated using **10-fold cross-validation**, where each fold re
 
 ### Repository Organization and Model Evaluation
 
-The `run_ml_experiments.py` script is used to train and evaluate the different models.
+The `run_ml_experiments.py` script is the executable file used to train and evaluate the different models.
 The dataset folders are organized as follows:
 
+- 'load_in_feature_vectors' helper functions for loading in featurized waveforms.
+- `waves` helper functions related to model creation, training, use of weights&biases, etc.
 - `coupling/coupling_individual/` contains the AE waveforms collected under each individual sensor-coupling condition.
 - `distance/distance_individual/` contains the AE waveforms collected at each individual source-to-sensor distance.
 - `coupling/coupling/stratified/` contains the same coupling data reorganized into training and testing splits.
