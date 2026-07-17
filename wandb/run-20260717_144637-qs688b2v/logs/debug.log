@@ -1,0 +1,36 @@
+2026-07-17 14:46:37,907 INFO    MainThread:512 [wandb_setup.py:_flush():76] Configure stats pid to 512
+2026-07-17 14:46:37,918 INFO    MainThread:512 [wandb_setup.py:_flush():76] Loading settings from C:\Users\ntuls\.config\wandb\settings
+2026-07-17 14:46:37,918 INFO    MainThread:512 [wandb_setup.py:_flush():76] Loading settings from G:\My Drive\phd\projects\coupling\github_upload\wandb\settings
+2026-07-17 14:46:37,918 INFO    MainThread:512 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2026-07-17 14:46:37,918 INFO    MainThread:512 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2026-07-17 14:46:37,918 INFO    MainThread:512 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run_ml_experiments.py', 'program': 'g:\\my drive\\phd\\projects\\coupling\\github_upload\\run_ml_experiments.py'}
+2026-07-17 14:46:37,918 INFO    MainThread:512 [wandb_init.py:_log_setup():506] Logging user logs to G:\My Drive\phd\projects\coupling\github_upload\wandb\run-20260717_144637-qs688b2v\logs\debug.log
+2026-07-17 14:46:37,918 INFO    MainThread:512 [wandb_init.py:_log_setup():507] Logging internal logs to G:\My Drive\phd\projects\coupling\github_upload\wandb\run-20260717_144637-qs688b2v\logs\debug-internal.log
+2026-07-17 14:46:37,918 INFO    MainThread:512 [wandb_init.py:_jupyter_setup():452] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001C3641B4A00>
+2026-07-17 14:46:37,918 INFO    MainThread:512 [wandb_init.py:init():546] calling init triggers
+2026-07-17 14:46:37,918 INFO    MainThread:512 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {'feature': 'iota', 'sig_len': 2048, 'model_architecture': 'NeuralNetwork_Conv1D_C1', 'hidden_layers': 5, 'hidden_units': 50, 'epochs': 20, 'random_seed': 42, 'device': 'cpu', 'loss_func': 'CrossEntropy', 'optimizer_alg': 'Adam', 'learning_rate': 0.001, 'batch_size': 25, 'dt': 1e-07, 'low_pass': 0, 'high_pass': 1200000, 'train_path': 'distance/stratified/01/01_train.json', 'valid_path': '', 'test_path': 'distance/stratified/01/01_test.json', 'validation_method': 'holdout', 'kfold_random_seed': None, 'kfold_n_splits': None, 'pretrained_model': None, 'task': 'classification', 'classes': ['top', 'sid', 'bot']}
+2026-07-17 14:46:37,918 INFO    MainThread:512 [wandb_init.py:init():602] starting backend
+2026-07-17 14:46:37,928 INFO    MainThread:512 [wandb_init.py:init():606] setting up manager
+2026-07-17 14:46:37,949 INFO    MainThread:512 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2026-07-17 14:46:37,959 INFO    MainThread:512 [wandb_init.py:init():613] backend started and connected
+2026-07-17 14:46:37,965 INFO    MainThread:512 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2026-07-17 14:46:37,969 INFO    MainThread:512 [wandb_run.py:_label_probe_notebook():1214] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2026-07-17 14:46:37,975 INFO    MainThread:512 [wandb_init.py:init():701] updated telemetry
+2026-07-17 14:46:37,975 INFO    MainThread:512 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2026-07-17 14:46:38,495 INFO    MainThread:512 [wandb_run.py:_on_init():2133] communicating current version
+2026-07-17 14:46:38,590 INFO    MainThread:512 [wandb_run.py:_on_init():2142] got version response upgrade_message: "wandb version 0.28.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2026-07-17 14:46:38,591 INFO    MainThread:512 [wandb_init.py:init():789] starting run threads in backend
+2026-07-17 14:46:38,767 INFO    MainThread:512 [wandb_run.py:_console_start():2114] atexit reg
+2026-07-17 14:46:38,767 INFO    MainThread:512 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2026-07-17 14:46:38,767 INFO    MainThread:512 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2026-07-17 14:46:38,772 INFO    MainThread:512 [wandb_run.py:_redirect():2059] Redirects installed.
+2026-07-17 14:46:38,772 INFO    MainThread:512 [wandb_init.py:init():831] run started, returning control to user process
+2026-07-17 14:47:04,332 INFO    MainThread:512 [wandb_run.py:_finish():1854] finishing run ae-ml_ucsb/stratified_CNN/qs688b2v
+2026-07-17 14:47:04,332 INFO    MainThread:512 [jupyter.py:save_history():445] not saving jupyter history
+2026-07-17 14:47:04,332 INFO    MainThread:512 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2026-07-17 14:47:04,338 INFO    MainThread:512 [wandb_init.py:_jupyter_teardown():434] cleaning up jupyter logic
+2026-07-17 14:47:04,339 INFO    MainThread:512 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 1
+2026-07-17 14:47:04,339 INFO    MainThread:512 [wandb_run.py:_restore():2066] restore
+2026-07-17 14:47:04,339 INFO    MainThread:512 [wandb_run.py:_restore():2072] restore done

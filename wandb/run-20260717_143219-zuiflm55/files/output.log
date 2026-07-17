@@ -1,0 +1,19 @@
+---------- HYPERPARAMETERS -----------------------------------
+feature : alpha
+device : cpu
+sig_len : 2048
+model_architecture : SVM
+dt : 1e-07
+low_pass : 0
+high_pass : 1200000
+train_path : distance/stratified/01/01_train.json
+valid_path :
+test_path : distance/stratified/01/01_test.json
+validation_method : holdout
+task : classification
+classes : ['top', 'sid', 'bot']
+Device: cpu
+---------- TRAINING ------------------------------------------
+HOLDOUT **********************************************************
+Getting training dataset...
+Loading in Dataset from distance/stratified/01/01_train.json

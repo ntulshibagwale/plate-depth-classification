@@ -1,0 +1,39 @@
+2026-07-17 14:44:32,752 INFO    MainThread:7836 [wandb_setup.py:_flush():76] Configure stats pid to 7836
+2026-07-17 14:44:32,757 INFO    MainThread:7836 [wandb_setup.py:_flush():76] Loading settings from C:\Users\ntuls\.config\wandb\settings
+2026-07-17 14:44:32,758 INFO    MainThread:7836 [wandb_setup.py:_flush():76] Loading settings from G:\My Drive\phd\projects\coupling\test\ml\wandb\settings
+2026-07-17 14:44:32,758 INFO    MainThread:7836 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2026-07-17 14:44:32,758 INFO    MainThread:7836 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2026-07-17 14:44:32,760 INFO    MainThread:7836 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run_ml_experiments.py', 'program': 'g:\\my drive\\phd\\projects\\coupling\\test\\ml\\run_ml_experiments.py'}
+2026-07-17 14:44:32,761 INFO    MainThread:7836 [wandb_init.py:_log_setup():506] Logging user logs to G:\My Drive\phd\projects\coupling\test\ml\wandb\run-20260717_144432-v1a1y1z9\logs\debug.log
+2026-07-17 14:44:32,764 INFO    MainThread:7836 [wandb_init.py:_log_setup():507] Logging internal logs to G:\My Drive\phd\projects\coupling\test\ml\wandb\run-20260717_144432-v1a1y1z9\logs\debug-internal.log
+2026-07-17 14:44:32,765 INFO    MainThread:7836 [wandb_init.py:_jupyter_setup():452] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001E691C26070>
+2026-07-17 14:44:32,766 INFO    MainThread:7836 [wandb_init.py:init():546] calling init triggers
+2026-07-17 14:44:32,766 INFO    MainThread:7836 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {'feature': 'beta', 'device': 'cpu', 'sig_len': 2048, 'model_architecture': 'SVM', 'dt': 1e-07, 'low_pass': 0, 'high_pass': 1200000, 'train_path': 'distance/stratified/01/01_train.json', 'valid_path': '', 'test_path': 'distance/stratified/01/01_test.json', 'validation_method': 'holdout', 'task': 'classification', 'classes': ['top', 'sid', 'bot']}
+2026-07-17 14:44:32,767 INFO    MainThread:7836 [wandb_init.py:init():602] starting backend
+2026-07-17 14:44:32,767 INFO    MainThread:7836 [wandb_init.py:init():606] setting up manager
+2026-07-17 14:44:32,801 INFO    MainThread:7836 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2026-07-17 14:44:32,814 INFO    MainThread:7836 [wandb_init.py:init():613] backend started and connected
+2026-07-17 14:44:32,822 INFO    MainThread:7836 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2026-07-17 14:44:32,822 INFO    MainThread:7836 [wandb_run.py:_label_probe_notebook():1214] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2026-07-17 14:44:32,822 INFO    MainThread:7836 [wandb_init.py:init():701] updated telemetry
+2026-07-17 14:44:32,822 INFO    MainThread:7836 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2026-07-17 14:44:34,262 INFO    MainThread:7836 [wandb_run.py:_on_init():2133] communicating current version
+2026-07-17 14:44:34,403 INFO    MainThread:7836 [wandb_run.py:_on_init():2142] got version response upgrade_message: "wandb version 0.28.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2026-07-17 14:44:34,403 INFO    MainThread:7836 [wandb_init.py:init():789] starting run threads in backend
+2026-07-17 14:44:34,712 INFO    MainThread:7836 [wandb_run.py:_console_start():2114] atexit reg
+2026-07-17 14:44:34,712 INFO    MainThread:7836 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2026-07-17 14:44:34,712 INFO    MainThread:7836 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2026-07-17 14:44:34,712 INFO    MainThread:7836 [wandb_run.py:_redirect():2059] Redirects installed.
+2026-07-17 14:44:34,712 INFO    MainThread:7836 [wandb_init.py:init():831] run started, returning control to user process
+2026-07-17 14:44:37,458 INFO    MainThread:7836 [wandb_run.py:_finish():1854] finishing run ae-ml_ucsb/stratified_classic_ML/v1a1y1z9
+2026-07-17 14:44:37,460 INFO    MainThread:7836 [jupyter.py:save_history():445] not saving jupyter history
+2026-07-17 14:44:37,460 INFO    MainThread:7836 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2026-07-17 14:44:37,460 INFO    MainThread:7836 [wandb_init.py:_jupyter_teardown():434] cleaning up jupyter logic
+2026-07-17 14:44:37,462 INFO    MainThread:7836 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2026-07-17 14:44:37,464 INFO    MainThread:7836 [wandb_run.py:_restore():2066] restore
+2026-07-17 14:44:37,464 INFO    MainThread:7836 [wandb_run.py:_restore():2072] restore done
+2026-07-17 14:44:42,734 INFO    MainThread:7836 [wandb_run.py:_footer_history_summary_info():3422] rendering history
+2026-07-17 14:44:42,734 INFO    MainThread:7836 [wandb_run.py:_footer_history_summary_info():3454] rendering summary
+2026-07-17 14:44:42,792 INFO    MainThread:7836 [wandb_run.py:_footer_sync_info():3380] logging synced files

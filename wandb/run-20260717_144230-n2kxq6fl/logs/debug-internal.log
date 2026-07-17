@@ -1,0 +1,50 @@
+2026-07-17 14:42:30,855 INFO    StreamThr :42604 [internal.py:wandb_internal():87] W&B internal server running at pid: 42604, started at: 2026-07-17 14:42:30.844537
+2026-07-17 14:42:30,855 DEBUG   HandlerThread:42604 [handler.py:handle_request():144] handle_request: status
+2026-07-17 14:42:30,867 INFO    WriterThread:42604 [datastore.py:open_for_write():85] open: G:\My Drive\phd\projects\coupling\test\ml\wandb\run-20260717_144230-n2kxq6fl\run-n2kxq6fl.wandb
+2026-07-17 14:42:30,885 DEBUG   SenderThread:42604 [sender.py:send():336] send: header
+2026-07-17 14:42:30,885 DEBUG   SenderThread:42604 [sender.py:send():336] send: run
+2026-07-17 14:42:31,245 DEBUG   HandlerThread:42604 [handler.py:handle_request():144] handle_request: status_report
+2026-07-17 14:42:31,401 INFO    SenderThread:42604 [dir_watcher.py:__init__():219] watching files in: G:\My Drive\phd\projects\coupling\test\ml\wandb\run-20260717_144230-n2kxq6fl\files
+2026-07-17 14:42:31,401 INFO    SenderThread:42604 [sender.py:_start_run_threads():1078] run started: n2kxq6fl with start time 1784324550.855048
+2026-07-17 14:42:31,401 DEBUG   SenderThread:42604 [sender.py:send_request():363] send_request: summary_record
+2026-07-17 14:42:31,421 INFO    SenderThread:42604 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2026-07-17 14:42:31,442 DEBUG   HandlerThread:42604 [handler.py:handle_request():144] handle_request: check_version
+2026-07-17 14:42:31,442 DEBUG   SenderThread:42604 [sender.py:send_request():363] send_request: check_version
+2026-07-17 14:42:31,621 DEBUG   HandlerThread:42604 [handler.py:handle_request():144] handle_request: run_start
+2026-07-17 14:42:31,641 DEBUG   HandlerThread:42604 [system_info.py:__init__():31] System info init
+2026-07-17 14:42:31,651 DEBUG   HandlerThread:42604 [system_info.py:__init__():46] System info init done
+2026-07-17 14:42:31,655 INFO    HandlerThread:42604 [system_monitor.py:start():183] Starting system monitor
+2026-07-17 14:42:31,660 INFO    SystemMonitor:42604 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2026-07-17 14:42:31,660 INFO    HandlerThread:42604 [system_monitor.py:probe():204] Collecting system info
+2026-07-17 14:42:31,670 INFO    SystemMonitor:42604 [interfaces.py:start():187] Started cpu monitoring
+2026-07-17 14:42:31,684 INFO    SystemMonitor:42604 [interfaces.py:start():187] Started disk monitoring
+2026-07-17 14:42:31,685 DEBUG   HandlerThread:42604 [system_info.py:probe():195] Probing system
+2026-07-17 14:42:31,688 INFO    SystemMonitor:42604 [interfaces.py:start():187] Started memory monitoring
+2026-07-17 14:42:31,688 DEBUG   HandlerThread:42604 [system_info.py:probe():240] Probing system done
+2026-07-17 14:42:31,712 INFO    SystemMonitor:42604 [interfaces.py:start():187] Started network monitoring
+2026-07-17 14:42:31,712 DEBUG   HandlerThread:42604 [system_monitor.py:probe():213] {'os': 'Windows-10-10.0.26200-SP0', 'python': '3.8.16', 'heartbeatAt': '2026-07-17T21:42:31.688143', 'startedAt': '2026-07-17T21:42:30.627096', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'g:\\my drive\\phd\\projects\\coupling\\test\\ml\\run_ml_experiments.py', 'codePath': 'run_ml_experiments.py', 'host': 'Nick', 'username': 'ntuls', 'executable': 'C:\\Users\\ntuls\\anaconda3\\envs\\waves\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2100.0, 'min': 0.0, 'max': 2100.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 0.0, 'max': 2100.0}], 'disk': {'total': 474.71581649780273, 'used': 459.26761627197266}, 'memory': {'total': 15.730949401855469}}
+2026-07-17 14:42:31,715 INFO    HandlerThread:42604 [system_monitor.py:probe():214] Finished collecting system info
+2026-07-17 14:42:31,715 INFO    HandlerThread:42604 [system_monitor.py:probe():217] Publishing system info
+2026-07-17 14:42:31,715 DEBUG   HandlerThread:42604 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2026-07-17 14:42:31,735 DEBUG   HandlerThread:42604 [system_info.py:_save_pip():67] Saving pip packages done
+2026-07-17 14:42:31,746 DEBUG   HandlerThread:42604 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2026-07-17 14:42:31,766 ERROR   HandlerThread:42604 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\Users\ntuls\anaconda3\envs\waves\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "C:\Users\ntuls\anaconda3\envs\waves\lib\subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\Users\ntuls\anaconda3\envs\waves\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\ntuls\anaconda3\envs\waves\lib\subprocess.py", line 1311, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2026-07-17 14:42:31,766 DEBUG   HandlerThread:42604 [system_info.py:_save_conda():86] Saving conda packages done
+2026-07-17 14:42:31,803 INFO    HandlerThread:42604 [system_monitor.py:probe():219] Finished publishing system info
+2026-07-17 14:42:31,807 DEBUG   SenderThread:42604 [sender.py:send():336] send: files
+2026-07-17 14:42:31,807 INFO    SenderThread:42604 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2026-07-17 14:42:32,417 INFO    wandb-upload_0:42604 [upload_job.py:push():138] Uploaded file C:\Users\ntuls\AppData\Local\Temp\tmpd3fzku4_wandb\v9jco84x-wandb-metadata.json
+2026-07-17 14:42:32,424 INFO    Thread-168:42604 [dir_watcher.py:_on_file_created():278] file/dir created: G:\My Drive\phd\projects\coupling\test\ml\wandb\run-20260717_144230-n2kxq6fl\files\wandb-metadata.json
+2026-07-17 14:42:32,426 INFO    Thread-168:42604 [dir_watcher.py:_on_file_created():278] file/dir created: G:\My Drive\phd\projects\coupling\test\ml\wandb\run-20260717_144230-n2kxq6fl\files\wandb-summary.json
+2026-07-17 14:42:32,426 INFO    Thread-168:42604 [dir_watcher.py:_on_file_created():278] file/dir created: G:\My Drive\phd\projects\coupling\test\ml\wandb\run-20260717_144230-n2kxq6fl\files\conda-environment.yaml
+2026-07-17 14:42:32,436 INFO    Thread-168:42604 [dir_watcher.py:_on_file_created():278] file/dir created: G:\My Drive\phd\projects\coupling\test\ml\wandb\run-20260717_144230-n2kxq6fl\files\requirements.txt
