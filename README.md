@@ -2,34 +2,68 @@ This repository contains the code accompanying the paper
 
 **[Identifying Acoustic Emission Depth in Plate-like Structures](https://link.springer.com/article/10.1007/s40192-026-00470-5)**
 
-## Feature Representations
+### Experimental Datasets
 
-The machine learning models were evaluated using nine acoustic emission feature representations of increasing complexity, ranging from simple handcrafted descriptors to the raw waveform.
+The models were trained and evaluated using two benchmark datasets consisting of acoustic emission (AE) waveforms generated from pencil-lead break (PLB) experiments on an aluminum plate. Each waveform belongs to one of three classes corresponding to the source depth:
+
+- **Top**
+- **Side**
+- **Bottom**
+
+Two datasets were constructed to evaluate model classification under realistic experimental variations:
+
+- **Coupling Dataset** – evaluates generalization across repeated sensor mounting and remounting (different coupling conditions).
+- **Distance Dataset** – evaluates generalization across unseen source-to-sensor distances by varying the PLB location along the plate.
+
+Each dataset contains **1,680 labeled waveforms** (560 per class).
+
+---
+
+### Feature Extraction
+
+Each waveform was represented using one of nine feature vectors. 
 
 | Feature | Length | Description | Reference |
 |:-------:|------:|-------------|:---------:|
-| **α** | 2 | Peak frequency, Maximum amplitude | [28] |
-| **β** | 2 | Peak frequency, Frequency centroid | [29] |
-| **γ** | 4 | Maximum amplitude, Rise time, Energy, Zero crossings | [5] |
-| **δ** | 8 | Wavelet packet energy distribution | [30] |
-| **ε** | 8 | Average frequency, Rise frequency, ln(rise time), ln(energy), ln(rise time/duration), ln(maximum amplitude/rise time), ln(maximum amplitude/decay time), ln(maximum amplitude/average frequency) | [16] |
-| **ζ** | 12 | Peak frequency, Frequency centroid, Weighted peak frequency, Average frequency, Reverb frequency, Rise frequency, Partial power (0–150 kHz), (150–300 kHz), (300–450 kHz), (450–600 kHz), (600–900 kHz), (900–1200 kHz) | [14] |
-| **η** | 26 | Partial power spectrum (0–1200 kHz, 46.1 kHz intervals) | [14] |
-| **θ** | 245 | Fast Fourier Transform (FFT) magnitude spectrum | — |
-| **ι** | 2048 | Raw acoustic emission waveform | — |
+| **α** | 2 | Peak frequency, Maximum amplitude
+| **β** | 2 | Peak frequency, Frequency centroid 
+| **γ** | 4 | Maximum amplitude, Rise time, Energy, Zero crossings
+| **δ** | 8 | Wavelet packet energy distribution
+| **ε** | 8 | Average frequency, Rise frequency, ln(rise time), ln(energy), ln(rise time/duration), ln(maximum amplitude/rise time), ln(maximum amplitude/decay time), ln(maximum amplitude/average frequency) 
+| **ζ** | 12 | Peak frequency, Frequency centroid, Weighted peak frequency, Average frequency, Reverb frequency, Rise frequency, Partial power (0–150 kHz), (150–300 kHz), (300–450 kHz), (450–600 kHz), (600–900 kHz), (900–1200 kHz) 
+| **η** | 26 | Partial power spectrum (0–1200 kHz, 46.1-kHz intervals) 
+| **θ** | 245 | Fast Fourier Transform (FFT) magnitude spectrum 
+| **ι** | 2048 | Raw acoustic emission waveform 
 
-## Models
+---
 
-### Classical Machine Learning
+### Models
+
+The following classification algorithms were evaluated:
+
+**Classical Machine Learning**
 
 - Logistic Regression
 - Support Vector Machine (SVM)
 - Random Forest
 
-### Neural Networks
+**Deep Learning**
 
 - Fully Connected Neural Networks
-- One-dimensional Convolutional Neural Networks (CNNs)
+- One-Dimensional Convolutional Neural Networks (CNNs)
+
+---
+
+### Model Evaluation
+
+Performance was evaluated using **10-fold cross-validation**, where each fold represented an unseen experimental condition rather than a random subset of waveforms.
+
+- **Coupling dataset:** each fold held out one sensor coupling condition.
+- **Distance dataset:** each fold held out one PLB source location.
+
+Model performance was quantified using classification accuracy on the held-out fold. 
+
+---
 
 ## Contact
 
