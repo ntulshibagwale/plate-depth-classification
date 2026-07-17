@@ -1,9 +1,7 @@
-# Identifying Acoustic Emission Depth in Plate-like Structures with Deep Learning
-
 This repository contains the code accompanying the paper
 
-> **Identifying Acoustic Emission Depth in Plate-like Structures with Deep Learning**
-
+> **[Identifying Acoustic Emission Depth in Plate-like Structures](https://link.springer.com/article/10.1007/s40192-026-00470-5#Tab1)**
+> 
 ## Feature Representations
 
 The machine learning models were evaluated using nine acoustic emission feature representations of increasing complexity, ranging from simple handcrafted descriptors to the raw waveform.
