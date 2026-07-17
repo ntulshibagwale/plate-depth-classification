@@ -43,10 +43,20 @@ Each waveform was represented using one of nine feature vectors.
 
 Performance was evaluated using **10-fold cross-validation**, where each fold represented an unseen experimental condition rather than a random subset of waveforms. Model performance was quantified using classification accuracy on the held-out fold. 
 
-## Contact
+## Repository Organization and Model Evaluation
+
+The `run_ml_experiments.py` script is used to train and evaluate the different models.
+The dataset folders are organized as follows:
+
+- `coupling/coupling_individual/` contains the AE waveforms collected under each individual sensor-coupling condition.
+- `distance/distance_individual/` contains the AE waveforms collected at each individual source-to-sensor distance.
+- `coupling/coupling/stratified/` contains the same coupling data reorganized into training and testing splits.
+- `distance/distance/stratified/` contains the same distance data reorganized into training and testing splits.
+
+For each stratified fold, waveforms from nine experimental conditions are combined into the training set, while the remaining condition is reserved as the test set. This process is repeated so that every coupling condition or source location serves as the held-out test condition once. This organization evaluates whether the models can generalize to an experimental condition that was not represented in the training data, rather than only evaluating performance on randomly selected waveforms from previously observed conditions.
+
+Questions about the repository are welcome if any part of the code or dataset organization is unclear.
 
 **Nick Tulshibagwale**
-
-Mechanical Engineering, University of California, Santa Barbara
 
 ntulshibagwale@ucsb.edu
