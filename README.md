@@ -10,7 +10,7 @@ The models were trained and evaluated using two benchmark datasets consisting of
 - **Side**
 - **Bottom**
 
-Two datasets were constructed to evaluate model classification under realistic experimental variations. Each dataset contains **1,680 labeled waveforms** (560 per class).
+Two datasets were constructed to evaluate model classification under realistic experimental variations. Each dataset contains 1,680 labeled waveforms (560 per class).
 
 - **Coupling Dataset** – evaluates generalization across repeated sensor mounting and remounting (different coupling conditions).
 - **Distance Dataset** – evaluates generalization across unseen source-to-sensor distances by varying the PLB location along the plate.
