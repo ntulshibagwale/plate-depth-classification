@@ -52,7 +52,7 @@ The repository is organized as follows:
 - `coupling/stratified/` – Coupling dataset reorganized into the training and testing splits used for 10-fold cross-validation.
 - `distance/stratified/` – Distance dataset reorganized into the training and testing splits used for 10-fold cross-validation.
 
-For each fold, waveforms from nine experimental conditions are combined to form the training set, while the remaining condition is held out as the test set. This process is repeated until every coupling condition or source location has served as the test set exactly once. By splitting the data according to experimental condition rather than randomly sampling individual waveforms, the evaluation measures each model's ability to generalize to previously unseen coupling conditions or source-to-sensor distances.
+For each fold, waveforms from nine experimental conditions are combined to form the training set, while the remaining condition is held out as the test set. This process is repeated until every coupling condition or source location has served as the test set exactly once.
 
 ### Contact
 
