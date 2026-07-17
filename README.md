@@ -19,8 +19,8 @@ Two datasets were constructed to evaluate model classification under realistic e
 
 Each waveform was represented using one of nine feature vectors. 
 
-| Feature | Length | Description | Reference |
-|:-------:|------:|-------------|:---------:|
+| Feature | Length | Description |
+|:-------:|------:|-------------|
 | **α** | 2 | Peak frequency, Maximum amplitude
 | **β** | 2 | Peak frequency, Frequency centroid 
 | **γ** | 4 | Maximum amplitude, Rise time, Energy, Zero crossings
