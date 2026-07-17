@@ -46,7 +46,7 @@ Performance was evaluated using **10-fold cross-validation**, where each fold re
 ### Repository Organization and Model Evaluation
 
 The `run_ml_experiments.py` script is the executable file used to train and evaluate the different models.
-The dataset folders are organized as follows:
+The other files contain either helper functions, or contain AE data used for training and testing the models:
 
 - 'load_in_feature_vectors' helper functions for loading in featurized waveforms.
 - `waves` helper functions related to model creation, training, use of weights&biases, etc.
