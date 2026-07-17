@@ -2,8 +2,6 @@ This repository contains the code accompanying the paper
 
 **[Identifying Acoustic Emission Depth in Plate-like Structures](https://link.springer.com/article/10.1007/s40192-026-00470-5)**
 
-If you have any questions about the repository, implementation, or dataset organization, please feel free to reach out.
-
 **Nick Tulshibagwale**  
 ntulshibagwale@ucsb.edu
 
