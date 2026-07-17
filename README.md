@@ -59,5 +59,4 @@ For each fold, waveforms from nine experimental conditions are combined to form 
 If you have any questions about the repository, implementation, or dataset organization, please feel free to reach out.
 
 **Nick Tulshibagwale**  
-University of California, Santa Barbara  
-📧 ntulshibagwale@ucsb.edu
+ntulshibagwale@ucsb.edu
