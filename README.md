@@ -2,6 +2,26 @@ This repository contains the code accompanying the paper
 
 **[Identifying Acoustic Emission Depth in Plate-like Structures](https://link.springer.com/article/10.1007/s40192-026-00470-5)**
 
+If you have any questions about the repository, implementation, or dataset organization, please feel free to reach out.
+
+**Nick Tulshibagwale**  
+ntulshibagwale@ucsb.edu
+
+## Repository Organization
+
+The `run_ml_experiments.py` script is the primary entry point for training and evaluating the machine learning and deep learning models described in the paper.
+
+The repository is organized as follows:
+
+- `load_in_feature_vectors.py` – Helper functions for extracting features from acoustic emission waveforms.
+- `waves/` – Core package containing utilities for feature extraction, data loading, model definitions, training, evaluation, visualization, and Weights & Biases integration.
+- `coupling/coupling_individual/` – Original AE waveforms grouped by individual sensor coupling condition.
+- `distance/distance_individual/` – Original AE waveforms grouped by individual source-to-sensor distance.
+- `coupling/stratified/` – Coupling dataset reorganized into the training and testing splits used for 10-fold cross-validation.
+- `distance/stratified/` – Distance dataset reorganized into the training and testing splits used for 10-fold cross-validation.
+
+For each fold, waveforms from nine experimental conditions are combined to form the training set, while the remaining condition is held out as the test set. This process is repeated until every coupling condition or source location has served as the test set exactly once.
+
 ### 3-Class Acoustic Emission Classification Datasets
 
 The models were trained and evaluated using two benchmark datasets consisting of acoustic emission (AE) waveforms generated from pencil-lead break (PLB) experiments on an aluminum plate. Each waveform belongs to one of three classes corresponding to the source depth:
@@ -39,24 +59,3 @@ Each waveform was represented using one of nine feature vectors.
 - Fully Connected Neural Networks
 - One-Dimensional Convolutional Neural Networks (CNNs)
 
-## Repository Organization
-
-The `run_ml_experiments.py` script is the primary entry point for training and evaluating the machine learning and deep learning models described in the paper.
-
-The repository is organized as follows:
-
-- `load_in_feature_vectors.py` – Helper functions for extracting features from acoustic emission waveforms.
-- `waves/` – Core package containing utilities for feature extraction, data loading, model definitions, training, evaluation, visualization, and Weights & Biases integration.
-- `coupling/coupling_individual/` – Original AE waveforms grouped by individual sensor coupling condition.
-- `distance/distance_individual/` – Original AE waveforms grouped by individual source-to-sensor distance.
-- `coupling/stratified/` – Coupling dataset reorganized into the training and testing splits used for 10-fold cross-validation.
-- `distance/stratified/` – Distance dataset reorganized into the training and testing splits used for 10-fold cross-validation.
-
-For each fold, waveforms from nine experimental conditions are combined to form the training set, while the remaining condition is held out as the test set. This process is repeated until every coupling condition or source location has served as the test set exactly once.
-
-### Contact
-
-If you have any questions about the repository, implementation, or dataset organization, please feel free to reach out.
-
-**Nick Tulshibagwale**  
-ntulshibagwale@ucsb.edu
