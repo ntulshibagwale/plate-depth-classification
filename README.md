@@ -43,7 +43,7 @@ Each waveform was represented using one of nine feature vectors.
 
 Performance was evaluated using **10-fold cross-validation**, where each fold represented an unseen experimental condition rather than a random subset of waveforms. Model performance was quantified using classification accuracy on the held-out fold. 
 
-## Repository Organization and Model Evaluation
+### Repository Organization and Model Evaluation
 
 The `run_ml_experiments.py` script is used to train and evaluate the different models.
 The dataset folders are organized as follows:
