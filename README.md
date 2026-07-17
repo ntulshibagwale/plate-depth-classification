@@ -10,14 +10,10 @@ The models were trained and evaluated using two benchmark datasets consisting of
 - **Side**
 - **Bottom**
 
-Two datasets were constructed to evaluate model classification under realistic experimental variations:
+Two datasets were constructed to evaluate model classification under realistic experimental variations. Each dataset contains **1,680 labeled waveforms** (560 per class).
 
 - **Coupling Dataset** – evaluates generalization across repeated sensor mounting and remounting (different coupling conditions).
 - **Distance Dataset** – evaluates generalization across unseen source-to-sensor distances by varying the PLB location along the plate.
-
-Each dataset contains **1,680 labeled waveforms** (560 per class).
-
----
 
 ### Feature Extraction
 
@@ -35,35 +31,17 @@ Each waveform was represented using one of nine feature vectors.
 | **θ** | 245 | Fast Fourier Transform (FFT) magnitude spectrum 
 | **ι** | 2048 | Raw acoustic emission waveform 
 
----
-
 ### Models
-
-The following classification algorithms were evaluated:
-
-**Classical Machine Learning**
 
 - Logistic Regression
 - Support Vector Machine (SVM)
 - Random Forest
-
-**Deep Learning**
-
 - Fully Connected Neural Networks
 - One-Dimensional Convolutional Neural Networks (CNNs)
 
----
-
 ### Model Evaluation
 
-Performance was evaluated using **10-fold cross-validation**, where each fold represented an unseen experimental condition rather than a random subset of waveforms.
-
-- **Coupling dataset:** each fold held out one sensor coupling condition.
-- **Distance dataset:** each fold held out one PLB source location.
-
-Model performance was quantified using classification accuracy on the held-out fold. 
-
----
+Performance was evaluated using **10-fold cross-validation**, where each fold represented an unseen experimental condition rather than a random subset of waveforms. Model performance was quantified using classification accuracy on the held-out fold. 
 
 ## Contact
 
