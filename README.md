@@ -27,7 +27,7 @@ Each waveform was represented using one of nine feature vectors.
 | **δ** | 8 | Wavelet packet energy distribution
 | **ε** | 8 | Average frequency, Rise frequency, ln(rise time), ln(energy), ln(rise time/duration), ln(maximum amplitude/rise time), ln(maximum amplitude/decay time), ln(maximum amplitude/average frequency) 
 | **ζ** | 12 | Peak frequency, Frequency centroid, Weighted peak frequency, Average frequency, Reverb frequency, Rise frequency, Partial power (0–150 kHz), (150–300 kHz), (300–450 kHz), (450–600 kHz), (600–900 kHz), (900–1200 kHz) 
-| **η** | 26 | Partial power spectrum (0–1200 kHz, 46.1-kHz intervals) 
+| **η** | 26 | Partial power spectrum (0–1200 kHz, 46.1kH z intervals) 
 | **θ** | 245 | Fast Fourier Transform (FFT) magnitude spectrum 
 | **ι** | 2048 | Raw acoustic emission waveform 
 
