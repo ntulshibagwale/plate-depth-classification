@@ -2,7 +2,7 @@ This repository contains the code accompanying the paper
 
 **[Identifying Acoustic Emission Depth in Plate-like Structures](https://link.springer.com/article/10.1007/s40192-026-00470-5)**
 
-### Experimental Datasets
+### 3-Class Acoustic Emission Classification Datasets
 
 The models were trained and evaluated using two benchmark datasets consisting of acoustic emission (AE) waveforms generated from pencil-lead break (PLB) experiments on an aluminum plate. Each waveform belongs to one of three classes corresponding to the source depth:
 
