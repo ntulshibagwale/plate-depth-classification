@@ -43,22 +43,29 @@ Each waveform was represented using one of nine feature vectors.
 
 Performance was evaluated using **10-fold cross-validation**, where each fold represented an unseen experimental condition rather than a random subset of waveforms. Model performance was quantified using classification accuracy on the held-out fold. 
 
-### Repository Organization and Model Evaluation
+### Model Evaluation
 
-The `run_ml_experiments.py` script is the executable file used to train and evaluate the different models.
-The other files contain either helper functions, or contain AE data used for training and testing the models:
+Performance was evaluated using **10-fold cross-validation**, where each fold represented an unseen experimental condition rather than a random subset of waveforms. Model performance was quantified using classification accuracy on the held-out fold.
 
-- 'load_in_feature_vectors' helper functions for loading in featurized waveforms.
-- `waves` helper functions related to model creation, training, use of weights&biases, etc.
-- `coupling/coupling_individual/` contains the AE waveforms collected under each individual sensor-coupling condition.
-- `distance/distance_individual/` contains the AE waveforms collected at each individual source-to-sensor distance.
-- `coupling/coupling/stratified/` contains the same coupling data reorganized into training and testing splits.
-- `distance/distance/stratified/` contains the same distance data reorganized into training and testing splits.
+## Repository Organization
 
-For each stratified fold, waveforms from nine experimental conditions are combined into the training set, while the remaining condition is reserved as the test set. This process is repeated so that every coupling condition or source location serves as the held-out test condition once. This organization evaluates whether the models can generalize to an experimental condition that was not represented in the training data, rather than only evaluating performance on randomly selected waveforms from previously observed conditions.
+The `run_ml_experiments.py` script is the primary entry point for training and evaluating the machine learning and deep learning models described in the paper.
 
-Questions about the repository are welcome if any part of the code or dataset organization is unclear.
+The repository is organized as follows:
 
-**Nick Tulshibagwale**
+- `load_in_feature_vectors.py` – Helper functions for extracting features from acoustic emission waveforms.
+- `waves/` – Core package containing utilities for feature extraction, data loading, model definitions, training, evaluation, visualization, and Weights & Biases integration.
+- `coupling/coupling_individual/` – Original AE waveforms grouped by individual sensor coupling condition.
+- `distance/distance_individual/` – Original AE waveforms grouped by individual source-to-sensor distance.
+- `coupling/stratified/` – Coupling dataset reorganized into the training and testing splits used for 10-fold cross-validation.
+- `distance/stratified/` – Distance dataset reorganized into the training and testing splits used for 10-fold cross-validation.
 
-ntulshibagwale@ucsb.edu
+For each fold, waveforms from nine experimental conditions are combined to form the training set, while the remaining condition is held out as the test set. This process is repeated until every coupling condition or source location has served as the test set exactly once. By splitting the data according to experimental condition rather than randomly sampling individual waveforms, the evaluation measures each model's ability to generalize to previously unseen coupling conditions or source-to-sensor distances.
+
+### Contact
+
+If you have any questions about the repository, implementation, or dataset organization, please feel free to reach out.
+
+**Nick Tulshibagwale**  
+University of California, Santa Barbara  
+📧 ntulshibagwale@ucsb.edu
